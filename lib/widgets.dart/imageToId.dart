@@ -52,7 +52,7 @@ class ImageToID extends StatelessWidget {
         output != null
             //'${}'
             ? Text(
-                'This is an image of a${removeNumbers(output[0]['label'].toString().toLowerCase())}',
+                'I can say with ${((output[0]['confidence'] as double) * 100).toStringAsFixed(2)}% confidence that this is an image of a${removeNumbers(output[0]['label'].toString().toLowerCase())}',
                 style: Utils.normal)
             : Text(
                 'Output is empty',

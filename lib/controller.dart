@@ -25,8 +25,8 @@ class ImageController extends GetxController {
 
   loadModel() async {
     await Tflite.loadModel(
-        model: 'assets/models/model_unquant.tflite',
-        labels: 'assets/models/labels.txt');
+        model: 'assets/models/animal/model_unquant.tflite',
+        labels: 'assets/models/animal/labels.txt');
   }
 
   classifyImage(File image) async {
@@ -38,9 +38,8 @@ class ImageController extends GetxController {
         imageStd: 127.5);
 
     output = outputT;
-    //_isloading = false;
 
-    log('This is the output: ${_output!.length}');
+    log('This is the output: ${_output![0]}');
   }
 
   pickImage(bool isCamera) async {

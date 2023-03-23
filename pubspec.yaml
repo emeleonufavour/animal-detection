@@ -53,8 +53,10 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/cat.jpg
-    - assets/models/labels.txt
-    - assets/models/model_unquant.tflite
+    - assets/models/animal/labels.txt
+    - assets/models/animal/model_unquant.tflite
+    - assets/models/cat-dog/labels.txt
+    - assets/models/cat-dog/model_unquant.tflite
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
