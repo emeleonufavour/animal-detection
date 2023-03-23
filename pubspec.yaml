@@ -31,6 +31,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
+  get: ^4.6.5
+  google_fonts: ^4.0.3
   image_picker: ^0.8.7
   tflite: ^1.1.2
 
@@ -49,8 +51,10 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - assets/images/cat.jpg
+    - assets/models/labels.txt
+    - assets/models/model_unquant.tflite
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
